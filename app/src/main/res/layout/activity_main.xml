@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#222222"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nameHolder"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/cairo_semibold"
+                android:text="@string/week_2_practical"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imageholder"
+                app:layout_constraintStart_toStartOf="@+id/imageholder"
+                app:layout_constraintTop_toBottomOf="@+id/imageholder"
+                tools:text="Hello World!" />
+
+            <ImageView
+                android:id="@+id/imageholder"
+                android:layout_width="206dp"
+                android:layout_height="251dp"
+                android:layout_marginTop="45dp"
+                android:contentDescription="@string/todo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hank_happy" />
+
+            <Button
+                android:id="@+id/followbtn"
+                android:layout_width="125dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="125dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/cairo"
+                android:text="@string/follow"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/messagebtn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descHolder"
+                app:layout_constraintVertical_bias="1.0"
+                tools:text="follow" />
+
+            <TextView
+                android:id="@+id/descHolder"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_donec_ac_sem_urna_maecenas_mollis_at_leo_molestie_facilisis_pellentesque_sagittis_nunc_ut_condimentum_rhoncus"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="@+id/nameHolder"
+                app:layout_constraintStart_toStartOf="@+id/nameHolder"
+                app:layout_constraintTop_toBottomOf="@+id/nameHolder" />
+
+            <Button
+                android:id="@+id/messagebtn"
+                android:layout_width="125dp"
+                android:layout_height="35dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/message"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/followbtn"
+                app:layout_constraintTop_toTopOf="@+id/followbtn" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

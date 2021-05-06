@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MAD Practical 2 - Activity</string>
+    <string name="open_user_follow_thing">Open User Follow Thing</string>
+    <string name="log_state_of_activity">Log State of Activity</string>
+    <string name="week_2_practical">WEEK 2 PRACTICAL</string>
+    <string name="todo">TODO</string>
+    <string name="message">message</string>
+    <string name="follow">Follow</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_donec_ac_sem_urna_maecenas_mollis_at_leo_molestie_facilisis_pellentesque_sagittis_nunc_ut_condimentum_rhoncus">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac sem urna. Maecenas mollis at leo molestie facilisis. Pellentesque sagittis nunc ut condimentum rhoncus.</string>
+</resources>
